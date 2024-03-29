@@ -1,0 +1,62 @@
+
+@media (max-width : 775px ) and (min-width : 320px){ 
+    /* navbar for course */
+    .btn-container .course-name-container{
+        overflow-x: auto;
+    }
+    .btn-container .course-name-container::-webkit-scrollbar{
+        width: 0;
+    }
+
+    /* compelete the cpourse */
+    .complete-course-container .complete-container{
+        overflow-x: auto;
+        padding: 10px;
+    }
+    .complete-course-container .complete-container::-webkit-scrollbar{
+        width: 0px;
+    }
+    .complete-course-container .complete-container .card{
+        min-width: 300px;
+    }
+
+    /* more from kitani studio */
+    .kitani-studio-container .studio-container{
+        overflow-x: auto;
+        padding: 10px;
+    }
+    .kitani-studio-container .studio-container::-webkit-scrollbar{
+        width: 0;
+    }
+    .kitani-studio-container .studio-container .card{
+        min-width: 300px;
+    }
+
+    /* tranding course */
+    .tranding-course-container .course-name{
+        overflow-x: auto;
+        padding: 10px;
+    }
+    .tranding-course-container .course-name::-webkit-scrollbar{
+        width: 0;
+    }
+    .tranding-course-container .course-name .card{
+        min-width: 300px;
+    }
+
+    /*  populer instructor  */
+    .instructor-conatiner{
+        overflow-x: auto;
+    }
+    .instructor-conatiner::-webkit-scrollbar{
+        width: 0;
+    }
+    .instructor-conatiner .col .img-name{
+        display: block;
+    }
+
+     /* subscribe card */
+    .subscribe{
+        display: none;
+    }
+} 

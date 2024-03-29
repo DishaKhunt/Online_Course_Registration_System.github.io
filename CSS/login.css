@@ -1,0 +1,93 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+
+.carousel-container{
+    height: 650px;
+    width: 100%;
+    position: relative;
+
+}
+.carousel-container .carousel-img{
+    height: 100%;
+    width: 100%;
+}
+.carousel-container {
+    background: black;
+    height: 750px;
+}
+.carousel-container .carousel-img .blur-img{
+    filter: blur(5px);
+    height: 500px;
+}
+
+.login-container{
+    width: 400px;
+    height: 500px;
+    border-radius: 20px;
+    background: black;
+    position: absolute;
+    top: 25%;
+    left: 38%;
+    box-shadow: 0px 0px 50px rgba(55, 242, 255, 0.3);
+    color: white;
+    overflow: hidden;
+}
+.login-container .text{
+    background: linear-gradient(#e8fdfb, #65b1a7,#02584b);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.login-container .form-container{
+    height: 300px;
+    width: 100%;
+    margin: 20px 0px;
+}
+.login-container .form-container .input-group{
+    position: relative;
+    margin: 10px 0px;
+}
+.login-container .form-container .input-group label{
+    position: absolute;
+    top: 20%;
+    padding: 0px 10px;
+}
+.login-container .form-container .input-group input{
+    height: 50px;
+    width: 100%;
+    background: transparent;
+    border: none;
+    border: 1px solid gray;
+    color: #17ddc0;
+}
+.login-container .form-container .input-group input:focus,
+.login-container .form-container .input-group input:valid{
+    border: 2px solid #17ddc0;
+    /* box-shadow: 0px 0px 10px #7dffee; */
+}
+.login-container .form-container .input-group input:focus~label,
+.login-container .form-container .input-group input:valid~label{
+    position: absolute;
+    top: -20%;
+    left: 10px;
+    color: #17ddc0;
+    z-index: 10;
+    background: black;
+}
+
+.login-container .form-container button{
+    background: linear-gradient(to right,#69ffe8, #42ddc5 ,#189d89, #0d6255 , #024b40);
+    border-style: none;
+}
+.login-container .form-container button:hover{
+    box-shadow: 0px 0px 20px #1b5f56;
+}
+.login-container .form-container p:hover{
+    color: #17ddc0;
+}
+.login-container .form-container p a{
+    color: #17ddc0;
+}

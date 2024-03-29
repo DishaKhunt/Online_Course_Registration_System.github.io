@@ -1,0 +1,188 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --txt-color: black;
+    --bg-secondary: rgb(176, 176, 176);
+    --txt-lightgreen: #17ddc0;
+    --txt-danger: red;
+    --white: white;
+}
+
+.nav-container{
+    position: fixed;
+     top: 0px;
+     z-index: 1;
+     background: white;
+ }
+ 
+/* navbar */
+nav .become-instuctor-container a{
+    color: var(--txt-color);
+}
+/* drowp down menu*/
+nav .dropdown:hover > .dropdown-menu {
+    display: block;
+} 
+
+/* buy container */
+.video-container .buy-container .off-btn{
+    background-color:  #A04AE3;
+    color: var(--white);
+}
+/* buy-btn */
+.video-container .buy-container .buy-btn{
+    background-color: var(--txt-lightgreen);
+    color: var(--white);
+    border-radius: 18px;
+}
+.btn-outline-secondary{
+    border-radius: 18px;
+}
+
+.video-container .lecture-container{
+    overflow-y: auto;
+    max-height: 320px;
+}
+.video-container .lecture-container::-webkit-scrollbar{
+    width: 0;
+}
+
+.video-container .lectures-overview-container .navbar-container{
+    list-style: none;
+}
+
+.video-container .lectures-overview-container .navbar-container li{
+    display: inline;
+    padding: 5px;
+}
+
+.video-container .lectures-overview-container .navbar-container li:hover{
+    border-bottom: 3px solid var(--txt-danger);
+}
+
+.video-container .lectures-overview-container .navbar-container li a{
+    color: var(--txt-color);
+}
+
+.video-container .lectures-overview-container .accordion-body{
+    overflow-y: auto;
+    max-height: 300px;
+}
+.video-container .lectures-overview-container .accordion-body::-webkit-scrollbar{
+    width: 0;
+}
+
+.video-container .lectures-overview-container .accordion-body .list-group .list-group-item .play-btn{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--white);
+    background: var(--txt-lightgreen);
+}
+
+.video-container .lectures-overview-container .accordion-body .list-group .list-group-item .push-btn{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--white);
+    background: var(--bg-secondary);
+}
+
+.video-container .lectures-overview-container .webinar-container{
+    height: 631px;
+    border-radius: 30px;
+    background: #1B283F;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container .lectures-overview-container .webinar-container img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.video-container .lectures-overview-container .webinar-container .web-btn{
+    position: absolute;
+    top: 7%;
+    left: 7%;
+    background: var(--txt-lightgreen);
+}
+
+.video-container .lectures-overview-container .webinar-container .content{
+    position: absolute;
+    top: 15%;
+    left: 7%;
+    color: var(--white);
+}
+
+.video-container .lectures-overview-container .review h6{
+    color: var(--txt-lightgreen);
+}
+
+.video-container .lectures-overview-container .accordion{
+    display: none;
+}
+
+/* discount container */
+.discount-container{
+    height: 184px;
+    position: relative;
+    border-radius: 18px;
+    overflow: hidden;
+}
+.discount-container img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+.discount-container .row{
+    z-index: 10;
+}
+
+.discount-container form input{
+    background: transparent;
+    border: none;
+    color: white;
+}
+
+.discount-container form input:focus{
+    background: transparent;
+    color: white;
+}
+
+.discount-container form .fa-solid{
+    line-height: 30px;
+}
+
+.discount-container form .input-group{
+    background: rgba(184, 184, 184, 0.3);
+    border-radius: 10px;    
+}
+
+.discount-container .sub-btn{
+    background: var(--txt-lightgreen);
+    height: 40px;
+    color: white;
+}
+
+/* footer */
+.footer-container .row .col ul{
+    list-style: none;
+}
+.footer-container .row .col ul li:hover{
+    color: #17ddc0;
+}
+.footer-bottom-container .social-media{
+    flex-direction: row-reverse;
+    font-size: 25px;
+}
+.footer-bottom-container .social-media .fa-brands:hover{
+    color: #17ddc0;
+}

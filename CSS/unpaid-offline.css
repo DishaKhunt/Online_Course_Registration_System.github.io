@@ -1,0 +1,160 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --txt-color: black;
+    --bg-secondary: rgb(176, 176, 176);
+    --txt-lightgreen: #17ddc0;
+    --txt-danger: red;
+    --white: white;
+}
+.nav-container{
+   position: fixed;
+    top: 0px;
+    z-index: 1;
+    background: white;
+}
+
+nav .become-instuctor-container a{
+    color: var(--txt-color);
+}
+/* drowp down menu*/
+nav .dropdown:hover > .dropdown-menu {
+    display: block;
+} 
+
+/* play btn */
+.video-container .lecture-container .play-btn{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--white);
+    background: var(--txt-lightgreen);
+}
+
+.video-container .lecture-container .min{
+    color: var(--txt-lightgreen);
+    font-size: 14px;
+}
+
+.video-container .lecture-container .com-btn{
+    background: var(--txt-lightgreen);
+    color: var(--white);
+}
+
+.video-container .lecture-container .push-btn{
+    background: var(--bg-secondary);
+    color: var(--white);
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+}
+.video-container .lecture-container{
+    overflow-y: auto;
+    max-height: 320px;
+}
+.video-container .lecture-container::-webkit-scrollbar{
+    width: 0;
+}
+
+.video-container .lectures-overview-container .navbar-container{
+    list-style: none;
+}
+
+.video-container .lectures-overview-container .navbar-container li{
+    display: inline;
+    padding: 5px;
+}
+
+.video-container .lectures-overview-container .navbar-container li:hover{
+    border-bottom: 3px solid var(--txt-danger);
+}
+
+.video-container .lectures-overview-container .navbar-container li a{
+    color: var(--txt-color);
+}
+
+.video-container .lectures-overview-container .accordion-body{
+    overflow-y: auto;
+    max-height: 300px;
+}
+.video-container .lectures-overview-container .accordion-body::-webkit-scrollbar{
+    width: 0;
+}
+
+.video-container .lectures-overview-container .accordion-body .list-group .list-group-item .play-btn{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--white);
+    background: var(--txt-lightgreen);
+}
+
+.video-container .lectures-overview-container .accordion-body .list-group .list-group-item .push-btn{
+    width: 20px;
+    height: 20px;
+    font-size: 10px;
+    line-height: 20px;
+    color: var(--white);
+    background: var(--bg-secondary);
+}
+
+.video-container .lectures-overview-container .description{
+    display: none;
+}
+
+.video-container .lectures-overview-container .webinar-container{
+    height: 631px;
+    border-radius: 30px;
+    background: #1B3F25;
+    position: relative;
+    overflow: hidden;
+}
+
+.video-container .lectures-overview-container .webinar-container img{
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+}
+
+.video-container .lectures-overview-container .webinar-container .web-btn{
+    position: absolute;
+    top: 7%;
+    left: 5%;
+}
+
+.video-container .lectures-overview-container .webinar-container .content{
+    position: absolute;
+    top: 15%;
+    left: 5%;
+    color: var(--white);
+}
+
+.video-container .lectures-overview-container .review h6{
+    color: var(--txt-lightgreen);
+}
+
+.video-container .lectures-overview-container .review{
+    display: none;
+}
+
+/* footer */
+.footer-container .row .col ul{
+    list-style: none;
+}
+.footer-container .row .col ul li:hover{
+    color: #17ddc0;
+}
+.footer-bottom-container .social-media{
+    flex-direction: row-reverse;
+    font-size: 25px;
+}
+.footer-bottom-container .social-media .fa-brands:hover{
+    color: #17ddc0;
+}
