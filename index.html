@@ -14,6 +14,9 @@
 
     <!-- fontawsome cdn -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+    <!-- icon cdn-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
     <title>Online Course Registration System</title>
 </head>
 
@@ -25,358 +28,507 @@
         </div>
 
 
-        <div class="header d-flex">
-            <nav class="navbar navbar-expand-lg w-100">
-                <div class="container">
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                    </button>
-                    <div class="logo d-flex">
-                        <img src="Images/Frame 44.png" alt="">
-                        <h5 class="mt-2 text-light"> MyCourse.io</h5>
+           <!-- header -->
+    <div class="header d-flex">
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="container">
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon" style="color: #40f0d5;"></span>
+                </button>
+                <div class="logo d-flex">
+                    <img src="Images/Frame 44.png" alt="">
+                    <h5 class="mt-2  text-light"> MyCourse.io</h5>
+                </div>
+
+                  <!-- mobile view -->
+                <div class="mobile-view-container d-flex justify-content-center align-items-center gap-2">
+                    <!-- notification-icon -->
+                    <div class="notification-icon  w-auto position-relative">
+
+                        <i class="bi bi-bell-fill fs-4 mb-3" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalToggle">
+                        </i>
+                        <span
+                            class="position-absolute translate-middle p-1 bg-danger border border-light rounded-circle"
+                            style="left: 70%; top: 39%;">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+    
                     </div>
-                    <div class="collapse navbar-collapse ms-3" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle text-light" href="#" role="button"
-                                    data-bs-toggle="dropdown" aria-expanded="false">
-                                    Browse
-                                </a>
-                                <ul class="dropdown-menu p-3">
-                                    <li class="nav-item dropend w-100 dropdown-submenu">
-                                        <a class="nav-link dropdown-item dropdown-toggle d-flex align-items-center"
-                                            href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <div class="nav-content me-auto">
-                                                <span class="fw-bold">Design</span>
-                                                <p>All About Design Course</p>
+    
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> <i
+                                            class="bi bi-bell-fill fs-4 text-warning"></i> Important Reminder <span
+                                            class="badge text-bg-danger rounded-circle">4</span></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex gap-3">
+                                            <div class="icon">
+                                                <i class="bi bi-journal-text fs-2 text-warning"></i>
                                             </div>
-                                        </a>
-                                        <ul class="dropdown-menu mx-3">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Illustration</span>
-                                                        <p>How to be great illustrator</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Graphic Design</span>
-                                                        <p>Make more benefit from design</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">UI/UX Design</span>
-                                                        <p>Make Design for website and apps</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-
-                                    <li class="nav-item menu dropend">
-                                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <div class="nav-content">
-                                                <h6>Programming</h6>
-                                                <p>Website and Mobile Programming</p>
+                                            <div class="content">
+                                                <h6>Assignment</h6>
+                                                <p>Please note that assignment submition are due.</p>
                                             </div>
-                                        </a>
-                                        <ul class="dropdown-menu submenu mx-3">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Illustration</span>
-                                                        <p>How to be great illustrator</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Graphic Design</span>
-                                                        <p>Make more benefit from design</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">UI/UX Design</span>
-                                                        <p>Make Design for website and apps</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li class="nav-item menu dropend">
-                                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <div class="nav-content">
-                                                <h6>Business & Marketing</h6>
-                                                <p>Website and Mobile Programming</p>
+                                        </li>
+                                        <li class="list-group-item d-flex gap-3">
+                                            <div class="icon">
+                                                <i class="bi bi-journal-text fs-2 text-primary"></i>
                                             </div>
-                                        </a>
-                                        <ul class="dropdown-menu submenu mx-3">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Illustration</span>
-                                                        <p>How to be great illustrator</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Graphic Design</span>
-                                                        <p>Make more benefit from design</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">UI/UX Design</span>
-                                                        <p>Make Design for website and apps</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li class="nav-item menu dropend">
-                                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <div class="nav-content">
-                                                <h6>Photo & Video</h6>
-                                                <p>Website and Mobile Programming</p>
+                                            <div class="content">
+                                                <h6>Assignment</h6>
+                                                <p>Please note that assignment submition are due.</p>
                                             </div>
-                                        </a>
-                                        <ul class="dropdown-menu submenu mx-3">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Illustration</span>
-                                                        <p>How to be great illustrator</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Graphic Design</span>
-                                                        <p>Make more benefit from design</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">UI/UX Design</span>
-                                                        <p>Make Design for website and apps</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-                                    <li>
-                                        <hr class="dropdown-divider">
-                                    </li>
-                                    <li class="nav-item menu dropend">
-                                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#"
-                                            role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            <div class="nav-content">
-                                                <h6>Writing</h6>
-                                                <p>Website and Mobile Programming</p>
+                                        </li>
+                                        <li class="list-group-item d-flex gap-3">
+                                            <div class="icon">
+                                                <i class="bi bi-journal-text fs-2 text-danger"></i>
                                             </div>
-                                        </a>
-                                        <ul class="dropdown-menu submenu mx-3">
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Illustration</span>
-                                                        <p>How to be great illustrator</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">Graphic Design</span>
-                                                        <p>Make more benefit from design</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <hr class="dropdown-divider">
-                                            </li>
-                                            <li>
-                                                <a class="dropdown-item" href="#">
-                                                    <div class="nav-content me-auto">
-                                                        <span class="fw-bold">UI/UX Design</span>
-                                                        <p>Make Design for website and apps</p>
-                                                    </div>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </li>
-
-                                </ul>
-                            </li>
-                        </ul>
-
-                        <!-- search bar -->
-                        <form class="d-flex ms-5 me-5" role="search">
-                            <div class="input-group">
-                                <input type="search" class="form-control" placeholder="Search for course"
-                                    aria-label="Search" aria-describedby="search-addon" />
-                                <button type="button" class="btn btn-outline-light " data-mdb-ripple-init>
-                                    <i class="fas fa-search"></i>
-                                </button>
+                                            <div class="content">
+                                                <h6>Assignment</h6>
+                                                <p>Please note that assignment submition are due.</p>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex gap-3">
+                                            <div class="icon">
+                                                <i class="bi bi-journal-text fs-2 text-success"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h6>Assignment</h6>
+                                                <p>Please note that assignment submition are due.</p>
+                                            </div>
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-bs-target="#exampleModalToggle2"
+                                        data-bs-toggle="modal">Close</button>
+                                </div>
                             </div>
-                        </form>
-
-                        <div class="ms-5 ps-5">
-                            <a href="#" class="text-decoration-none text-light"> Become Instructor</a>
                         </div>
+                    </div>
+    
+                    <!-- search bar option in mobile view-->
+                    <div class="serach-bar-container">
+                        <a href="search.html" class="text-decoration-none text-dark"> <i class="bi bi-search fs-6 "></i></a>
+                    </div>
+                </div>
 
+                  
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle text-light" href="#" role="button"
+                                data-bs-toggle="dropdown" aria-expanded="false">
+                                Browse
+                            </a>
+                            <ul class="dropdown-menu p-3">
+                                <li class="nav-item dropend dropdown-submenu">
+                                    <a class="nav-link dropdown-item dropdown-toggle d-flex align-items-center" href="#"
+                                        role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="nav-content me-auto">
+                                            <span class="fw-bold">Design</span>
+                                            <p>All About Design Course</p>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu mx-3">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Illustration</span>
+                                                    <p>How to be great illustrator</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Graphic Design</span>
+                                                    <p>Make more benefit from design</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">UI/UX Design</span>
+                                                    <p>Make Design for website and apps</p>
+                                                </div>
+                                            </a>
+                                        </li>
 
-                        <!-- cart - ic0n -->
-                        <div class="cart-icon text-light ms-5">
-                            <i class="fa-solid fa-cart-shopping fs-5"></i>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+
+                                <li class="nav-item dropdown-submenu menu dropend">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="nav-content me-auto">
+                                            <h6>Programming</h6>
+                                            <p>Website and Mobile Programming</p>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu submenu mx-3">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Illustration</span>
+                                                    <p>How to be great illustrator</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Graphic Design</span>
+                                                    <p>Make more benefit from design</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">UI/UX Design</span>
+                                                    <p>Make Design for website and apps</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="nav-item menu dropend">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="nav-content me-auto">
+                                            <h6>Business & Marketing</h6>
+                                            <p>Website and Mobile Programming</p>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu submenu mx-3">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Illustration</span>
+                                                    <p>How to be great illustrator</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Graphic Design</span>
+                                                    <p>Make more benefit from design</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">UI/UX Design</span>
+                                                    <p>Make Design for website and apps</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="nav-item menu dropend">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="nav-content me-auto">
+                                            <h6>Photo & Video</h6>
+                                            <p>Website and Mobile Programming</p>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu submenu mx-3">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Illustration</span>
+                                                    <p>How to be great illustrator</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Graphic Design</span>
+                                                    <p>Make more benefit from design</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">UI/UX Design</span>
+                                                    <p>Make Design for website and apps</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li class="nav-item menu dropend">
+                                    <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" role="button"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <div class="nav-content me-auto">
+                                            <h6>Writing</h6>
+                                            <p>Website and Mobile Programming</p>
+                                        </div>
+                                    </a>
+                                    <ul class="dropdown-menu submenu mx-3">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Illustration</span>
+                                                    <p>How to be great illustrator</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">Graphic Design</span>
+                                                    <p>Make more benefit from design</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <hr class="dropdown-divider">
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <div class="nav-content me-auto">
+                                                    <span class="fw-bold">UI/UX Design</span>
+                                                    <p>Make Design for website and apps</p>
+                                                </div>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </li>
+
+                            </ul>
+                        </li>
+                    </ul>
+
+                   
+                     <!-- search box -->
+                     <div class="nav my-3 my-xl-0 px-4 flex-nowrap align-items-center search-container mx-auto">
+                        <div class="nav-item w-100">
+                            <form class="position-relative">
+                                <input class="form-control pe-5 bg-transparent" type="search"
+                                    placeholder="Search" aria-label="Search">
+                                <button
+                                    class="bg-transparent p-2 position-absolute top-50 end-0 translate-middle-y border-0 text-primary-hover text-reset"
+                                    type="submit">
+                                    <i class="bi bi-search fs-6 text-light"></i>
+                                </button>
+                            </form>
                         </div>
+                    </div>
 
-                        <!-- login sign-up btn -->
-                        <div class="d-flex ms-5 gap-3">
-                            <!-- login -->
-                            <button class="btn px-4 login-btn" type="button" data-bs-toggle="modal"
-                                data-bs-target="#login">
-                                login
-                            </button>
+                  
+                    <!-- login icon -->
+                    <div class="login-container d-flex align-items-center">
+                       <a href="sign_in_up.html" class="text-decoration-none text-light"><i class="bi bi-person-circle fs-4"></i></a> 
+                        <span class="icon-name ms-2">Login</span>
+                    </div>
 
-                            <div class="modal" role="dialog" id="login">
-                                <div class="modal-dialog modal-lg d-flex">
-                                    <div class="model-img">
-                                        <img src="Images/login.jpg" alt="" height="100%" width="100%">
+                    <!-- cart icon -->
+                    <div class="cart-icon cart-container d-flex align-items-center">
+                        <i class="bi bi-cart3 fs-4 text-light"></i>
+                        <span class="icon-name ms-2">Add to Cart</span>
+                    </div>
+
+                    <!-- notification-icon -->
+                    <div class="notification-container  w-auto position-relative ms-3">
+
+                        <i class="bi bi-bell-fill fs-4 mb-3 text-light" data-bs-toggle="modal"
+                            data-bs-target="#exampleModalToggle">
+                        </i>
+                        <span
+                            class="position-absolute translate-middle p-1 bg-danger border border-light rounded-circle"
+                            style="left: 70%; top: 39%;">
+                            <span class="visually-hidden">New alerts</span>
+                        </span>
+    
+                    </div>
+    
+                    <!-- notification-model -->
+                    <div class="modal fade" id="exampleModalToggle" aria-hidden="true"
+                        aria-labelledby="exampleModalToggleLabel" tabindex="-1">
+                        <div class="modal-dialog modal-dialog-centered">
+                            <div class="modal-content">
+                                <div class="modal-header ">
+                                    <h1 class="modal-title fs-5" id="exampleModalToggleLabel"> <i
+                                            class="bi bi-bell-fill fs-4 text-warning"></i> Important Reminder <span
+                                            class="badge text-bg-danger rounded-circle">4</span></h1>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body d-flex justify-content-center">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex gap-3">
+                                            <div class="icon">
+                                                <i class="bi bi-journal-text fs-2 text-warning"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h6>Assignment</h6>
+                                                <p>Please note that assignment submition are due.</p>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex gap-3">
+                                            <div class="icon">
+                                                <i class="bi bi-journal-text fs-2 text-primary"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h6>Assignment</h6>
+                                                <p>Please note that assignment submition are due.</p>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex gap-3">
+                                            <div class="icon">
+                                                <i class="bi bi-journal-text fs-2 text-danger"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h6>Assignment</h6>
+                                                <p>Please note that assignment submition are due.</p>
+                                            </div>
+                                        </li>
+                                        <li class="list-group-item d-flex gap-3">
+                                            <div class="icon">
+                                                <i class="bi bi-journal-text fs-2 text-success"></i>
+                                            </div>
+                                            <div class="content">
+                                                <h6>Assignment</h6>
+                                                <p>Please note that assignment submition are due.</p>
+                                            </div>
+                                        </li>
+    
+                                    </ul>
+                                </div>
+                                <div class="modal-footer">
+                                    <button class="btn btn-danger" data-bs-target="#exampleModalToggle2"
+                                        data-bs-toggle="modal">Close</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+
+                    <!-- Profile pic -->
+                    <div class=" dropdown profile-conatiner d-flex align-items-center">
+                        <div class="profile-img">
+                            <a class="avatar avatar-sm p-0" href="#" id="profileDropdown" role="button"
+                            data-bs-auto-close="outside" data-bs-display="static" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="avatar-img rounded-circle" src="Images/profile.png" alt="avatar">
+                        </a>
+                        <ul class="dropdown-menu dropdown-animation dropdown-menu-end shadow pt-3"
+                            aria-labelledby="profileDropdown">
+                            <!-- Profile info -->
+                            <li class="px-3 mb-3">
+                                <div class="d-flex align-items-center">
+                                    <div class="avatar me-3">
+                                        <img class="avatar-img rounded-circle shadow" src="Images/profile.png"
+                                            alt="avatar">
                                     </div>
-                                    <div class="modal-content px-4">
-                                        <div class="float-end w-100 d-flex justify-content-end">
-                                            <button type="button" class="btn fs-4 text-dark"
-                                                data-bs-dismiss="modal">&times;</button>
-                                        </div>
-                                        <div class="logo d-flex">
-                                            <img src="Images/Frame 44.png" alt="">
-                                            <h6 class="mt-2 text-dark"> MyCourse.io</h6>
-                                        </div>
-                                        <p class="text-secondary mt-2">Join us and get more benefits. We promise to keep
-                                            your data safely. </p>
-
-
-                                        <form>
-                                            <div class="form-content">
-                                                <input type="email" class="form-control" id="email"
-                                                    placeholder="Email Address">
-                                                <span id="msg1" class="text-danger ms-2"></span>
-                                            </div>
-                                            <div class="form-content">
-                                                <input type="password" class="form-control" id="pswd"
-                                                    placeholder="Password">
-                                                <span id="msg2" class="text-danger ms-2"></span>
-                                            </div>
-
-
-                                            <button class="btn login-button w-100 mt-2 fs-5 fw-bold"
-                                                type="button">Login</button>
-
-                                            <p class="text-center m-2">Or you can</p>
-
-                                            <button class="btn fb-btn w-100 fw-bold ">
-                                                <a href="#" class="text-decoration-none text-light">
-                                                    <i class="fa-brands fa-facebook"></i>
-                                                    Continue with Facebook
-                                                </a>
-                                            </button>
-                                            <button class="btn ap-btn w-100 fw-bold bg-drak mt-2">
-                                                <a href="#" class="text-decoration-none text-light">
-                                                    <i class="fa-brands fa-apple"></i>
-                                                    Continue with Apple
-                                                </a>
-                                            </button>
-                                            <button class="btn w-100 fw-bold bg-drak mt-2">
-                                                <a href="#" class="text-decoration-none text-dark">
-                                                    <i class="fa-brands fa-google"></i>
-                                                    Continue with Google
-                                                </a>
-                                            </button>
-                                        </form>
-
-                                        <p class="text-center mt-4">Need an Account? <a href="sign_in_up.html">Sign
-                                                Up</a>
-                                        </p>
+                                    <div>
+                                        <a class="h6 text-decoration-none" href="#">Lori Ferguson</a>
+                                        <p class="small m-0">example@gmail.com</p>
                                     </div>
                                 </div>
-
-                            </div>
-                            <!-- sign-in -->
-                            <button class="btn px-4 sign-in-btn" type="button">
-                                <a href="sign_in_up.html" class="nav-link">Sign Up</a>
-                            </button>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="All-course.html"><i class="bi bi-laptop me-4"></i>My
+                                    Courses</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-cart fa-fw me-4"></i>My
+                                    Cart</a>
+                            </li>
+                            <li><a class="dropdown-item" href="wishlist-course.html"><i
+                                        class="bi bi-heart fa-fw me-4"></i>Wishlist</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item" href="account.html"><i class="bi bi-person fa-fw me-4"></i>Edit
+                                    Profile</a>
+                            </li>
+                            <li><a class="dropdown-item" href="account.html"><i
+                                        class="bi bi-gear fa-fw me-4"></i>Account
+                                    Settings</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-bell fa-fw me-4"></i>notification</a>
+                            </li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-info-circle fa-fw me-4"></i>Help</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li><a class="dropdown-item bg-danger-soft-hover" href="#"><i
+                                        class="bi bi-power fa-fw me-4 text-danger"></i>
+                                    <span class="text-danger">Log Out</span></a></li>
+                        </ul>
                         </div>
-
+                        <span class="icon-name ms-2">Profile</span>
                     </div>
-
-                </div>
-            </nav>
-
-            <!-- Profile pic -->
-            <div class="ms-3 profile-img m-5">
-                <img src="Images/profile.png" alt="" class="rounded-circle" height="100%" width="100%">
+                </div>              
+              
             </div>
-        </div>
+        </nav>
+
+
+    </div>
+
         <!-- carusole title -->
         <div class="carousel-title text-light">
             <h1>Learn something new everyday.</h1>
@@ -407,7 +559,7 @@
 
     <!-- complete your course -->
     <div class="container-fluid">
-        <div class="complete-course-container container">
+        <div class="complete-course-container mx-auto ">
             <h2 class="text-center">
                 Complete your Course
             </h2>
@@ -484,7 +636,7 @@
 
     <!-- More from Kitani Studio -->
     <div class="container-fluid py-3">
-        <div class="kitani-studio-container container">
+        <div class="kitani-studio-container mx-auto">
             <h2 class="text-center">
                 More from Kitani Studio
             </h2>
@@ -614,7 +766,7 @@
 
     <!-- Tranding couse -->
     <div class="conatiner-fluid tranding p-3">
-        <div class="tranding-course-container container">
+        <div class="tranding-course-container mx-auto">
             <h2 class="text-center">
                 Tranding Course
             </h2>
@@ -1015,9 +1167,6 @@
             integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13"
             crossorigin="anonymous"></script>
         <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-
-        <!-- login js link -->
-        <script src="Script/login.js"></script>
     </div>
 </body>
 
