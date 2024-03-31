@@ -36,76 +36,32 @@
  .carousel-container nav .dropdown:hover > .dropdown-menu {
     display: block;
 } 
-
-
-/* cart-icon */
-.carousel-container .header .cart-icon{
-    line-height: 100px;
-}
-
-/* login-form */
-.carousel-container .header nav .login-btn{
-    border: 3px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    border-image-source: linear-gradient(50deg, #8d8e8e 0%,#fbfcfc 100%);
-    color: white;
+.header nav .profile-img{
     height: 40px;
-}
-.carousel-container .header .login-btn:hover{
-    background: linear-gradient(50deg, #8d8e8e 0%,#fbfcfc 100%);
-    color: black;
+    width: 40px;
 }
 
-#login .modal-dialog{
-    position: absolute;
-    top: 10%;
-    left: 23%;
-    height: 620px;
+/* drowp down menu*/
+nav .dropdown:hover > .dropdown-menu {
+display: block;
 } 
-#login .modal-dialog .modal-img{
-    width: 400px;
-    border: none;
-}
-#login .modal-dialog .modal-content{
-    width: 50%;
+.header .icon-name{
+display: none;
 }
 
+.header nav .search-container input[type="search"]{
+width: 400px;
+color: white;
+}
 
-#login .modal-dialog .modal-content .login-button{
-    background: linear-gradient(50deg ,#69ffe8 0%, #42ddc5 25% ,#189d89 50%, #0d6255 75%, #024b40 100%);
-    border-style: none;
+.header nav .search-container input[type="search"]::placeholder{
     color: white;
 }
-#login .modal-dialog .modal-content .login-button:hover{
-    box-shadow: 0px 0px 20px #1b5f56;
+.header .profile-conatiner,.cart-container,.login-container{
+margin-left: 15px;
 }
-#login .modal-dialog .modal-content .fb-btn{
-    background: rgb(63, 2, 142);
-}
-#login .modal-dialog .modal-content .ap-btn{
-    background: rgb(8, 8, 8);
-}
-
-
-/* sign-in btn */
-.carousel-container .header .sign-in-btn{
-    border: 3px solid;
-    border-image-slice: 1;
-    border-width: 2px;
-    color: #17ddc0;
-    border-image-source: linear-gradient(50deg, #03433a 0%,#40f0d5 100%);
-    height: 40px;
-}
-.carousel-container .header .sign-in-btn:hover{
-    background: linear-gradient(50deg, #03433a 0%,#40f0d5 100%);
-    color: white;
-}
-
-/* profile pic */
-.carousel-container .header .profile-img{
-    height: 50px;
-    width: 50px;
+.header .mobile-view-container{
+display: none !important;
 }
 
 
@@ -164,6 +120,10 @@
 
 
 /* compelete course container */
+
+.complete-course-container{
+    width: 85%;
+}
 .complete-course-container .card{
     width: 300px;
     height: 300px;
@@ -191,6 +151,10 @@
 
 /* more from kitani studio */
 /* tranding course container */
+.tranding-course-container,
+.kitani-studio-container{
+    width: 85%;
+}
 .tranding-course-container .card,
 .kitani-studio-container .card{
     width: 300px;
