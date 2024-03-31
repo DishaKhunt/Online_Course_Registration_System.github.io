@@ -214,6 +214,9 @@ form.sign-up-form{
     .container.sign-up-mode2 form.sign-up-form{
         opacity: 1;
     }
+    .container.sign-up-mode form.sign-in-form {
+        opacity: 1;
+    }
     .container.sign-up-mode2 .sign-in-container{
         display: none;
     }
