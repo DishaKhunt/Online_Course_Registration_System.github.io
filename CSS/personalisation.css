@@ -1,0 +1,76 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --txt-color: black;
+    --bg-secondary: rgb(115, 115, 115);
+    --txt-lightgreen: #17ddc0;
+    --txt-danger: red;
+    --white: white;
+}
+
+.nav-container{
+    position: fixed;
+     top: 0px;
+     z-index: 1;
+     background: white;
+ }
+ 
+/* navbar */
+nav .become-instuctor-container a{
+    color: var(--txt-color);
+}
+/* drowp down menu*/
+nav .dropdown:hover > .dropdown-menu {
+    display: block;
+} 
+
+/* presonalisation-container */
+.presonalisation-container .explore-container{
+    width: 250px;
+    height: 350px;
+    border-radius: 23px;
+}
+.presonalisation-container .explore-container img{
+   filter: brightness(80%);
+   border-radius: 20px;
+} 
+.presonalisation-container .explore-container .check-icon
+{
+    display:  none;
+}
+.presonalisation-container .explore-container .check-icon .bi{
+    color: #17ddc0;
+}
+
+.presonalisation-container .explore-container.active{
+    border: 3px solid var(--txt-lightgreen);
+}
+
+.presonalisation-container .check-icon.active{
+    display: block;
+}
+
+.continue-btn{
+    background: var(--txt-lightgreen);
+    border-radius: 15px;
+    color: white;
+}
+
+/* footer */
+.footer-container .row .col ul{
+    list-style: none;
+}
+.footer-container .row .col ul li:hover{
+    color: #17ddc0;
+}
+.footer-bottom-container .social-media{
+    flex-direction: row-reverse;
+    font-size: 25px;
+}
+.footer-bottom-container .social-media .bi:hover{
+    color: #17ddc0;
+}

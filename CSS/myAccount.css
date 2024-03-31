@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --txt-color: black;
+    --bg-secondary: rgb(176, 176, 176);
+    --txt-lightgreen: #17ddc0;
+    --txt-danger: red;
+    --white: white;
+}
+
+.header{
+    position: fixed;
+     top: 0px;
+     z-index: 1;
+     background: white;
+ }
+ 
+/* navbar */
+nav .become-instuctor-container a{
+    color: var(--txt-color);
+}
+/* drowp down menu*/
+nav .dropdown:hover > .dropdown-menu {
+    display: block;
+} 
+
+
+/* account container */
+.account-container ul li{
+    list-style: none;
+    position: relative;
+}
+
+.account-container ul li a{
+    color: var(--txt-color);
+}
+.account-container li a::before{
+    position: absolute;
+    content: '';
+    transition: 1s;
+    bottom: 0px;
+    left: 50%;
+    border-bottom:  3px solid var(--txt-lightgreen);
+    width: 0px;
+}
+.account-container li a:hover:before{
+    width: 50%;
+}
+.account-container li a::after{
+    position: absolute;
+    content: '';
+    transition: 1s;
+    bottom: 0px;
+    right: 50%;
+    border-bottom: 3px solid var(--txt-lightgreen);
+    width: 0px;
+}
+.account-container li a:hover:after{
+    width: 50%;
+}
+
+.account-container ul li:hover a{
+    color: var(--txt-lightgreen);
+}
+
+.account-container .form-container input:focus,select:focus{
+    outline: none;
+}
+
+
+.save-btn{
+    background: var(--txt-lightgreen);
+    color: white;
+    border-radius: 15px;
+}
+
+
+/* payment methods start */
+.payment-container .add-card-btn{
+    background-color: rgba(194, 251, 230, 0.4);
+    color: #05c38a;
+}
+
+.payment-container .visa-img{
+    height: 100px;
+    width: 50px;
+}
+
+/* footer */
+.footer-container .row .col ul{
+    list-style: none;
+}
+.footer-container .row .col ul li:hover{
+    color: #17ddc0;
+}
+.footer-bottom-container .social-media{
+    flex-direction: row-reverse;
+    font-size: 25px;
+}
+.footer-bottom-container .social-media .bi:hover{
+    color: #17ddc0;
+}
+
+/* media query */
+@media (max-width:727px) and(min-width:541px){
+    .account-menu ul{
+        white-space: nowrap;
+        overflow-x: auto;
+    }
+}
+@media (max-width:540px) and (min-width:320px) {
+    .account-container{
+        padding-top: 3px !important;
+        box-shadow: 0px !important;
+    }
+    .account-container h2{
+        display: none;
+    }
+    .account-menu ul{
+        overflow-x: auto;
+        white-space: nowrap;
+        border-bottom: 1px solid rgb(198, 198, 198);
+        padding-bottom: 0px !important;
+    }
+    .account-menu ul::-webkit-scrollbar{
+        width: 0px;
+    }
+    .account-container .form-container{
+        width: 80% !important;
+    }
+    .account-container .account-menu .active{
+        padding-left : 0px !important;
+    }
+    .footer{
+        display: none;
+    }
+}
